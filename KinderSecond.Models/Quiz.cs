@@ -15,7 +15,7 @@ namespace KinderSecond.Models
         }
         public int Id { get; set; }
         public string Name { get; set; }
-       
+        public string PicturePath { get; set; }
         public virtual ICollection<Question> Questions
         {
             get { return this.questions; }
