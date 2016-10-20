@@ -7,13 +7,13 @@ namespace KinderSecond.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class first : IMigrationMetadata
+    public sealed partial class First : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(first));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(First));
         
         string IMigrationMetadata.Id
         {
-            get { return "201610072102008_first"; }
+            get { return "201610200833050_First"; }
         }
         
         string IMigrationMetadata.Source

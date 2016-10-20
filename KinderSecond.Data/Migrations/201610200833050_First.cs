@@ -3,7 +3,7 @@ namespace KinderSecond.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class First : DbMigration
     {
         public override void Up()
         {
@@ -81,6 +81,7 @@ namespace KinderSecond.Data.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
+                        PicturePath = c.String(),
                         ApplicationUser_Id = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)

@@ -52,6 +52,13 @@ namespace KinderSecond.Data
                 return this.GetRepository<Question>();
             }
         }
+        public IRepository<PromoCode> Codes
+        {
+            get
+            {
+                return this.GetRepository<PromoCode>();
+            }
+        }
 
         public int SaveChanges()
         {

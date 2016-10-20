@@ -61,13 +61,13 @@
     <Compile Include="GenericRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IUowData.cs" />
-    <Compile Include="Migrations\201610061827552_InitialCreate.cs" />
-    <Compile Include="Migrations\201610061827552_InitialCreate.Designer.cs">
-      <DependentUpon>201610061827552_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201610200833050_First.cs" />
+    <Compile Include="Migrations\201610200833050_First.Designer.cs">
+      <DependentUpon>201610200833050_First.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610072102008_first.cs" />
-    <Compile Include="Migrations\201610072102008_first.Designer.cs">
-      <DependentUpon>201610072102008_first.cs</DependentUpon>
+    <Compile Include="Migrations\201610200835411_kur.cs" />
+    <Compile Include="Migrations\201610200835411_kur.Designer.cs">
+      <DependentUpon>201610200835411_kur.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,11 +84,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201610061827552_InitialCreate.resx">
-      <DependentUpon>201610061827552_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610200833050_First.resx">
+      <DependentUpon>201610200833050_First.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610072102008_first.resx">
-      <DependentUpon>201610072102008_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610200835411_kur.resx">
+      <DependentUpon>201610200835411_kur.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -15,6 +15,7 @@ namespace KinderSecond.Data
 
         IRepository<ApplicationUser> Users { get; }
         IRepository<Answer> Answers { get; }
+        IRepository<PromoCode> Codes { get; }
         int SaveChanges();
     }
 }

@@ -10,7 +10,6 @@ namespace KinderSecond.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "KinderSecond.Data.ApplicationDbContext";
         }
 
         protected override void Seed(KinderSecond.Data.ApplicationDbContext context)
