@@ -21,24 +21,25 @@ namespace KinderSecond.Controllers
         {
             return View();
         }
-        public bool AddCode(string code)
+        public bool AddCode(PromoCodeViewModel codeModel)
         {
-
             var userId = User.Identity.GetUserId();
-            var codeEntry = Data.Codes.All().FirstOrDefault(x => x.UserId.ToString() == userId && code == x.Value);
+            var codeEntry = Data.Codes.All().FirstOrDefault(x => x.UserId.ToString() == userId && codeModel.Value == x.Value);
             if (codeEntry == null)
             {
                 var newEntry = new PromoCode()
                 {
-                    Value = code,
+                    Value = codeModel.Value,
                     UserId = userId
                 };
                 Data.Codes.Add(newEntry);
                 Data.SaveChanges();
                 return true;
             }
-
-            return true;
+            else
+            {
+                return false;
+            }
         }
     }
 }
